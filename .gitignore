@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.log
+# 忽略 model_pth 下所有 .pth 文件
+model_pth/*.pth
+# 但保留 best 和 last 文件（取反规则）
+!model_pth/minimobileresnet_best.pth
+!model_pth/minimobileresnet_last.pth
+# 保留 .txt 文件（因为没被忽略规则匹配）
